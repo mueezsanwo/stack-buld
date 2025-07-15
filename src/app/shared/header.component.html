@@ -1,0 +1,20 @@
+<header class="flex justify-between items-center p-4 bg-white dark:bg-gray-900 shadow sticky top-0 z-50">
+  <a routerLink="/" class="text-lg font-bold text-purple-600 dark:text-white">🛍️ Mini-Commerce</a>
+
+  <div class="flex items-center gap-4">
+    <a routerLink="/cart" class="relative inline-block">
+      <span class="text-xl dark:text-white">🧺</span>
+      <span
+        *ngIf="cartCount > 0"
+        class="absolute -top-1 -right-2 text-xs bg-purple-600 text-white w-5 h-5 flex items-center justify-center rounded-full"
+      >
+        {{ cartCount }}
+      </span>
+    </a>
+
+    <!-- 🌙 Dark Mode Toggle Button -->
+    <button (click)="toggleDark()" class="text-sm px-2 py-1 rounded border text-gray-700 dark:text-white border-gray-300 dark:border-white">
+      {{ isDark ? '🌞 Light' : '🌙 Dark' }}
+    </button>
+  </div>
+</header>

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "slug": "cool-shirt",
+    "name": "Cool Shirt",
+    "price": 29.99,
+    "image": "assets/images/shirt.jpg",
+    "description": "A cool shirt for everyday wear."
+  },
+  {
+    "id": 2,
+    "slug": "chic-mug",
+    "name": "Chic Mug",
+    "price": 14.99,
+    "image": "assets/images/mug.jpg",
+    "description": "Sip your coffee in style with this elegant mug."
+  },
+  {
+    "id": 3,
+    "slug": "sleek-backpack",
+    "name": "Sleek Backpack",
+    "price": 49.99,
+    "image": "assets/images/backpack.jpg",
+    "description": "Perfect for students and commuters alike."
+  },
+  {
+    "id": 4,
+    "slug": "smart-watch",
+    "name": "Smart Watch",
+    "price": 199.99,
+    "image": "assets/images/watch.jpg",
+    "description": "Track your health and time in one stylish device."
+  },
+  {
+    "id": 5,
+    "slug": "classic-notebook",
+    "name": "Classic Notebook",
+    "price": 9.99,
+    "image": "assets/images/notebook.jpg",
+    "description": "Jot down your thoughts in this timeless journal."
+  },
+  {
+    "id": 6,
+    "slug": "wireless-earbuds",
+    "name": "Wireless Earbuds",
+    "price": 59.99,
+    "image": "assets/images/earbuds.jpg",
+    "description": "Enjoy your music on the go without the hassle of wires."
+  },
+  {
+    "id": 7,
+    "slug": "stylish-hat",
+    "name": "Stylish Hat",
+    "price": 24.99,
+    "image": "assets/images/hat.jpg",
+    "description": "A trendy hat to keep you cool and stylish."
+  },
+  {
+    "id": 8,
+    "slug": "eco-bottle",
+    "name": "Eco Bottle",
+    "price": 19.99,
+    "image": "assets/images/bottles.jpg",
+    "description": "Stay hydrated with this eco-friendly water bottle."
+  },
+  {
+    "id": 9,
+    "slug": "leather-wallet",
+    "name": "Leather Wallet",
+    "price": 39.99,
+    "image": "assets/images/wallet.jpg",
+    "description": "A premium leather wallet to keep your cards organized."
+  },
+  {
+    "id": 10,
+    "slug": "desk-lamp",
+    "name": "Desk Lamp",
+    "price": 34.99,
+    "image": "assets/images/lamp.jpg",
+    "description": "Light up your workspace with this sleek and adjustable lamp."
+  }
+]

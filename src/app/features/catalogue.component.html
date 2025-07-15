@@ -1,0 +1,43 @@
+<div class="p-4 bg-white text-black dark:bg-gray-900 dark:text-gray-100">
+  <h1 class="text-xl font-semibold mb-4">Shop Products</h1>
+
+  <!-- 🔍 Search Input -->
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Search products..."
+    class="w-full mb-4 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white dark:bg-gray-800 shadow rounded p-4"
+  />
+
+  <!-- Loader -->
+  <div *ngIf="loading" class="text-center text-gray-500">Loading products...</div>
+
+  <!-- Product Grid -->
+  <!-- Product Grid -->
+<div
+  class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 "
+  [@fadeStagger]="filteredProducts().length"
+>
+  <a
+    *ngFor="let product of filteredProducts()"
+    [routerLink]="['/product', product.slug]"
+    class=" block hover:shadow-md transition transform hover:scale-105 duration-200 bg-white dark:bg-gray-800 shadow rounded p-4"
+  >
+    <img
+      [src]="product.image"
+      [alt]="product.name"
+      class="w-32 h-32  rounded"
+    />
+    <div class="mt-2">
+      <h2 class="text-sm font-bold truncate">{{ product.name }}</h2>
+      <p class="text-xs text-gray-500">{{ product.price | currency }}</p>
+    </div>
+  </a>
+</div>
+
+
+  <!-- No match message -->
+  <p *ngIf="!loading && filteredProducts().length === 0" class="text-sm text-center text-gray-500 mt-6">
+    No products found for "{{ searchTerm }}"
+  </p>
+</div>
