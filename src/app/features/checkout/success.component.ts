@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./success.component.css']
 })
 export class SuccessComponent {
-  orderId: string = '';
+  orderId = '';
 
   constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe(params => {
